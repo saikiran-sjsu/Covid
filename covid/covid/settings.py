@@ -78,8 +78,15 @@ WSGI_APPLICATION = 'covid.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'covid',
+        'USER': 'root',
+        'PASSWORD': 'password123',
+        'HOST': 'covid.c8idaxlxroso.us-west-1.rds.amazonaws.com',
+        'PORT': '3306',
+
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
