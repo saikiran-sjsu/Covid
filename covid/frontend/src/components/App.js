@@ -5,6 +5,12 @@ import Home from './Home';
 // import 'bootstrap/dist/css/bootstrap.css';
 // import Navbar from 'react-bootstrap/Navbar'
 import Navbar from "./Navbar";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
+import Map from "./Map";
+import Testing from "./Testing";
+import About from "./About";
+
+
 
 export default class App extends Component {
     constructor(props) {
@@ -12,13 +18,16 @@ export default class App extends Component {
     }
     render() {
         return (
-           
-                
-            <div>
-                <Navbar/>
-                <Home />
-            </div>
-            
+            <Router>
+                <div>
+                    <Navbar />
+                </div>
+                <Route exact path='/' component={Home}/>
+                <Route path='/about' component={About} />
+                <Route path='/map' component={Map} />
+                <Route path='/testing' component={Testing} />
+            </Router>
+
         );
     }
 }

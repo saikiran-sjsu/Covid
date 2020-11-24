@@ -33,8 +33,8 @@ export default class Home extends Component {
         }
         document.title = 'Covid | Home'
         return (
-            <Router>
                 <div className="Home">
+                    <h1>This is the home page</h1>
                     <ul>
                         {items.map(item => (
                             <li key={item.date}>
@@ -43,13 +43,6 @@ export default class Home extends Component {
                         ))}
                    </ul>
                 </div>
-                <Switch>
-                    <Route exact path='/'><h1>This is the home page</h1></Route>
-                    <Route path='/about' component={About} />
-                    <Route path='/map' component={Map} />
-                    <Route path='/testing' component={Testing} />
-                </Switch>
-            </Router>
         );
     }
 
