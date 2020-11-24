@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import About from "./About";
-import Map from "./Map";
+import Map from "./Donations";
 import Testing from "./Testing";
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 

@@ -3,7 +3,7 @@ from .views import index
 
 urlpatterns = [
    path('', index),
-   path('map', index),
+   path('donations', index),
    path('testing', index),
    path('about', index)
 

@@ -10,8 +10,8 @@ class Navbar extends Component {
                     <a className="w3-bar-item w3-button" href="/about">
                         About
                     </a>
-                    <a className="w3-bar-item w3-button" href="/map">
-                        Map
+                    <a className="w3-bar-item w3-button" href="/donations">
+                    Donations
                     </a>
                     <a className="w3-bar-item w3-button" href="/testing">
                         Testing
