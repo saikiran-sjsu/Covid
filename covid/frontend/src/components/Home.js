@@ -32,9 +32,11 @@ export default class Home extends Component {
             return <div>Loading...</div>;
         }
         document.title = 'Covid | Home'
+        var today = new Date(),
+        date =  (today.getMonth() + 1) + '/' + today.getDate()  + '/' + (today.getFullYear() - 2000);
         return (
                 <div className="Home">
-                    <h1>This is the home page</h1>
+                    <center><h1>Covid - {date}</h1></center>
                     <ul>
                         {items.map(item => (
                             <li key={item.date}>
