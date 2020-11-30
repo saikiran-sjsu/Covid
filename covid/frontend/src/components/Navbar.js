@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import {logout} from '../actions/auth';
+import { logout } from '../actions/auth';
+import { Nav } from 'react-bootstrap';
+
 
 export class Navbar extends Component {
   static propTypes = {
@@ -13,26 +15,34 @@ export class Navbar extends Component {
   render() {
     const { isAuthenticated, user } = this.props.auth;
 
-    const authLinks = (
+    const authLinks2 = (
+
       <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
-        <span className="navbar-text mr-3">
-          <strong>{user ? `Welcome ${user.username}` : ''}</strong>
-        </span>
         <li className="nav-item">
           <Link to="/testing" className="nav-link">
             Testing
-          </Link>
+           </Link>
         </li>
         <li className="nav-item">
           <Link to="/donations" className="nav-link">
             Donation
-          </Link>
+           </Link>
         </li>
         <li className="nav-item">
           <Link to="/about" className="nav-link">
             About
           </Link>
         </li>
+      </ul>
+    );
+    const authLinks = (
+
+
+      <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+        <span className="navbar-text mr-3">
+          <strong>{user ? `Welcome ${user.username}` : ''}</strong>
+        </span>
+        {/* <Nav.Link href="/testing">Testing</Nav.Link> */}
         <li className="nav-item">
           <button onClick={this.props.logout} className="nav-link btn btn-info btn-sm text-light">
             Logout
@@ -40,7 +50,6 @@ export class Navbar extends Component {
         </li>
       </ul>
     );
-
     const guestLinks = (
       <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
         <li className="nav-item">
@@ -74,6 +83,9 @@ export class Navbar extends Component {
             <a className="navbar-brand" href="/">
               Infovid
             </a>
+            <div>
+              {isAuthenticated ? authLinks2: guestLinks}
+            </div>
           </div>
           {isAuthenticated ? authLinks : guestLinks}
         </div>
