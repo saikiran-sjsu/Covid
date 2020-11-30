@@ -65,6 +65,16 @@ export class Navbar extends Component {
       </ul>
     );
 
+    const guestLinks2 = (
+      <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li className="nav-item">
+          <Link to="/register" className="nav-link">
+            
+          </Link>
+          </li>
+      </ul>
+    );
+
     return (
       <nav className="navbar navbar-expand-sm navbar-light bg-light">
         <div className="container">
@@ -84,7 +94,7 @@ export class Navbar extends Component {
               Infovid
             </a>
             <div>
-              {isAuthenticated ? authLinks2: guestLinks}
+              {isAuthenticated ? authLinks2 : guestLinks2}
             </div>
           </div>
           {isAuthenticated ? authLinks : guestLinks}
