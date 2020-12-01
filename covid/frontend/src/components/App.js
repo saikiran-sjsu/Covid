@@ -18,7 +18,7 @@ import store from '../store';
 import { loadUser } from '../actions/auth';
 import About from './About';
 import Testing from './Testing';
-import Donations from './Donations';
+import Donate from './Donate';
 
 // Alert Options
 const alertOptions = {
@@ -46,7 +46,7 @@ class App extends Component {
                   <Route exact path="/login" component={Login} />
                   <Route exact path="/about" component={About} />
                   <Route exact path="/testing" component={Testing} />
-                  <Route exact path="/donation" component={Donations} />
+                  <Route exact path="/donate" component={Donate} />
                 </Switch>
               </div>
             </Fragment>

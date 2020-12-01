@@ -6,9 +6,28 @@ export default class Testing extends Component {
         super(props);
     }
     render() {
-        document.title = 'Covid |Testing'
+        document.title = 'Covid | Testing'
         return(
-        <h1>This is the testing pages</h1>);
+            <div>
+                <br></br>
+                <h1>Test for Coronavirus</h1>
+                <br></br>
+                <h3> Below are wesbites to find an area near you to get tested</h3>
+                <br></br>
+                <a class="btn btn-link" href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html" target="_blank">Health and Human Services</a>
+
+                
+
+
+
+            </div>
+
+
+                
+        
+        );
+
+        
         
     }
 }

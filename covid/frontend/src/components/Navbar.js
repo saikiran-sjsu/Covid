@@ -24,8 +24,8 @@ export class Navbar extends Component {
            </Link>
         </li>
         <li className="nav-item">
-          <Link to="/donations" className="nav-link">
-            Donation
+          <Link to="/donate" className="nav-link">
+            Donate
            </Link>
         </li>
         <li className="nav-item">
@@ -44,7 +44,7 @@ export class Navbar extends Component {
         </span>
         {/* <Nav.Link href="/testing">Testing</Nav.Link> */}
         <li className="nav-item">
-          <button onClick={this.props.logout} className="nav-link btn btn-info btn-sm text-light">
+          <button onClick={this.props.logout} class="nav-link btn btn-info btn-sm text-light">
             Logout
           </button>
         </li>

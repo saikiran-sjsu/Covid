@@ -94,10 +94,10 @@ export const logout = () => (dispatch, getState) => {
   axios
     .post('/api/auth/logout/', null, tokenConfig(getState))
     .then((res) => {
-      dispatch({ type: 'CLEAR_LEADS' });
       dispatch({
         type: LOGOUT_SUCCESS,
       });
+      window.location = "/login";
     })
     .catch((err) => {
       dispatch(returnErrors(err.response.data, err.response.status));
