@@ -44,7 +44,7 @@ export class Navbar extends Component {
         </span>
         {/* <Nav.Link href="/testing">Testing</Nav.Link> */}
         <li className="nav-item">
-          <button onClick={this.props.logout} class="nav-link btn btn-info btn-sm text-light">
+          <button onClick={this.props.logout} class="nav-link btn btn-danger btn-sm text-light">
             Logout
           </button>
         </li>
