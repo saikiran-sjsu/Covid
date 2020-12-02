@@ -22,7 +22,10 @@ export default class About extends Component {
 
                   We want people in the United States to be informed about COVID-19, also known as the Coronavirus.
                   We hope people will use our website to get the consistent daily updates of cases within each state and to 
-                  be aware of the severity of this virus. ---add more here if we want---
+                  be aware of the severity of this virus. We created a donations and testing tab for easy source access.
+                  We are hoping having easy accessibility to donation websites will encourage others to help the community
+                  and donate what they can. The testing site tab is a great feature to have as well because it can provide
+                  others with the knowledge on where to go if they need to get tested. 
                 </body>
                 <br></br>
                 <br></br>
