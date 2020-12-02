@@ -25,3 +25,11 @@ SystemDiagram,Class/Sequence/DbSchemafromprojectReport
 5. Run docker-compose up
 6. Go to localhost:8000 or 0.0.0.0:8000
 7. Register an account on the Infovid web page
+
+#Instructions for running the project locally
+1. Download Github zip file
+2. Unzip the file and go into the folder directory using terminal  
+3. Install pip
+4. cd into covid 
+5. In terminal, type pip install -r requirments.txt
+6. In terminal, type python manage.py runserver
