@@ -47,7 +47,9 @@ export default class About extends Component {
                     <br></br>
                     <h3>Renad M.</h3>
 
-                     --- input whatever -----
+                    I am a Senior at San Jose State University studying Software Engineering. I love spending time with my 
+                    family and working out. Creating this website has been a great experience, and hopefully this will help 
+                    people in the future with being aware of COVID-19 and giving them the information they need.
                 </body>
 
                 
