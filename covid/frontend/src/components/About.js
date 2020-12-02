@@ -41,7 +41,9 @@ export default class About extends Component {
                     <br></br>
                     <h3>Saikiran N.</h3>
 
-                    --- input whatever ----
+                    I am a Senior at San Jose State Univeristy studying Software Engineering planning on graduating Fall 2021. 
+                    In my free time, I spend time with my puppy and do photography and cook. I hope that this website would 
+                    be able to provide information and be beneficial to everyone. 
                     <br></br>
                     <h3>Renad M.</h3>
 
