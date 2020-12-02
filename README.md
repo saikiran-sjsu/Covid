@@ -26,10 +26,19 @@ SystemDiagram,Class/Sequence/DbSchemafromprojectReport
 6. Go to localhost:8000 or 0.0.0.0:8000
 7. Register an account on the Infovid web page
 
-#Instructions for running the project locally
+# Instructions for running the project locally
 1. Download Github zip file
 2. Unzip the file and go into the folder directory using terminal  
 3. Install pip
 4. cd into covid 
 5. In terminal, type pip install -r requirments.txt
 6. In terminal, type python manage.py runserver
+
+# System Diagram
+<img width="979" alt="Screen Shot 2020-11-29 at 12 00 33 AM" src="https://user-images.githubusercontent.com/47757618/100933500-4ca28e00-34a2-11eb-8f45-199139c8672b.png">
+
+# Sequence Diagram
+<img width="814" alt="Screen Shot 2020-11-29 at 12 01 54 AM" src="https://user-images.githubusercontent.com/47757618/100933521-53c99c00-34a2-11eb-855a-d2caf391ffca.png">
+
+# Class Diagram 
+<img width="581" alt="Screen Shot 2020-11-28 at 9 35 23 PM" src="https://user-images.githubusercontent.com/47757618/100933527-55935f80-34a2-11eb-8785-ad6518e9c919.png">
