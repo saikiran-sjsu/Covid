@@ -15,6 +15,7 @@ export default class Testing extends Component {
                 <h3> Below are wesbites to find an area near you to get tested</h3>
                 <br></br>
                 <a class="btn btn-link" href="https://www.hhs.gov/coronavirus/community-based-testing-sites/index.html" target="_blank">Health and Human Services</a>
+                <a class="btn btn-link" href="https://my.castlighthealth.com/corona-virus-testing-sites/" target="_blank">Castlight</a>
 
                 
 
