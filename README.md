@@ -5,4 +5,5 @@
 3. Build the Docker file through directory 
 4. Run docker-compose build
 5. Run docker-compose up
-6. Register an account on the Infovid web page 
+6. Go to localhost:8000 or 0.0.0.0:8000
+7. Register an account on the Infovid web page
