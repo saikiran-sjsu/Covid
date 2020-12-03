@@ -3,6 +3,7 @@ import About from "./About";
 import Map from "./Donate";
 import Testing from "./Testing";
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
+import Clock from 'react-live-clock';
 
 
 export default class Home extends Component {
@@ -29,24 +30,15 @@ export default class Home extends Component {
     render() {
         var { isLoaded, items } = this.state;
         document.title = 'Covid | Home'
+        
         var CurrentDate = new Date().toLocaleDateString();
-        var CurrentTime = new Date().toLocaleTimeString('en-US', { hour12: false, 
-            hour: "numeric", 
-            minute: "numeric",
-            second:"numeric"
-        });
-
-        //for(var i = item.positive; i < items.length; i++){
-           // {items.map(item => (
-               // totalPosCases += {item.positive}
-            //))}
-            
-       // }       
+      
         return (
             <div className="Home">
                 <center>
                     <h1>Covid Cases</h1>
-                    <h5>{CurrentDate}-{CurrentTime}</h5>
+                    <h5>{CurrentDate}-<Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} /></h5>
+                  
                    
                 </center>
                 <center> <table border="3px">

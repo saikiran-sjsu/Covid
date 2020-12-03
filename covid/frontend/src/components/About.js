@@ -17,7 +17,7 @@ export default class About extends Component {
                 <br></br>
                 
                 <body>
-                <h1>Reason of Creation</h1>
+                <center><h1>Reason of Creation</h1></center>
                 <br></br>
 
                   We want people in the United States to be informed about COVID-19, also known as the Coronavirus.
@@ -33,7 +33,7 @@ export default class About extends Component {
 
 
                 <body> 
-                <h1>Creators</h1>
+                <center><h1>Creators</h1></center>
                 <br></br>
 
                     <h3>Elias F.</h3>
