@@ -27,10 +27,10 @@ would be which port the database is on usually 3306.
 <img width="427" alt="Screen Shot 2020-12-02 at 9 54 54 PM" src="https://user-images.githubusercontent.com/54517360/100970079-0fadba00-34e9-11eb-80ab-3764b98d1c49.png">
 4. Open docker
 <br>5. cd into covid in the terminal/command prompt
-6. In terminal, type docker build . -t covid
-7. In terminal, type docker-compose build
-8. In terminal, type docker-compose up
-9. Go to localhost:8000 or 0.0.0.0:8000
+<br>6. In terminal, type docker build . -t covid
+<br>7. In terminal, type docker-compose build
+<br>8. In terminal, type docker-compose up
+<br>9. Go to localhost:8000 or 0.0.0.0:8000
 
 
 
