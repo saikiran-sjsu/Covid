@@ -28,20 +28,20 @@ const alertOptions = {
 
 class App extends Component {
   componentDidMount() {
-    store.dispatch(loadUser());
+    store.dispatch(loadUser()); //Loads the user for the application  
   }
 
   render() {
     return (
       <Provider store={store}>
         <AlertProvider template={AlertTemplate} {...alertOptions}>
-          <Router>
+          <Router> //Allows for having multiple pages within the application 
             <Fragment>
-              <Navbar />
-              <Alerts />
+              <Navbar /> //Calls the Navbar component to display the naviagtion page on the application 
+              <Alerts /> //Calls the Alert component to display error alerts  
               <div className="container">
-                <Switch>
-                  <PrivateRoute exact path="/" component={Home} />
+                <Switch> 
+                  <PrivateRoute exact path="/" component={Home} /> {/* Only accesible to authenticated users */} 
                   <Route exact path="/register" component={Register} />
                   <Route exact path="/login" component={Login} />
                   <Route exact path="/about" component={About} />
